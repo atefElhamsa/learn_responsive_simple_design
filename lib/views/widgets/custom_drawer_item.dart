@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/drawer_item_model.dart';
+import 'package:responsive_dash_board/utils/get_resposive_font_size.dart';
 
 class CustomDrawerItem extends StatelessWidget {
   const CustomDrawerItem({super.key, required this.drawerItemModel});
@@ -15,7 +16,12 @@ class CustomDrawerItem extends StatelessWidget {
         title: FittedBox(
           alignment: Alignment.centerLeft,
           fit: BoxFit.scaleDown,
-          child: Text(drawerItemModel.title),
+          child: Text(
+            drawerItemModel.title,
+            style: TextStyle(
+              fontSize: getResposiveFontSize(context, fontSize: 20),
+            ),
+          ),
         ),
       ),
     );

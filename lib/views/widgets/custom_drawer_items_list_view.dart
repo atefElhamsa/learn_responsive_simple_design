@@ -3,10 +3,7 @@ import 'package:responsive_dash_board/models/drawer_item_model.dart';
 import 'package:responsive_dash_board/views/widgets/custom_drawer_item.dart';
 
 class CustomDrawerItemsListView extends StatelessWidget {
-  const CustomDrawerItemsListView({
-    super.key,
-    required this.items,
-  });
+  const CustomDrawerItemsListView({super.key, required this.items});
 
   final List<DrawerItemModel> items;
 
